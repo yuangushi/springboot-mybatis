@@ -17,6 +17,5 @@ public class TestController {
     public String setNx(String key,String value){
         redisTemplate.opsForValue().set(key,value);
         return redisTemplate.opsForValue().get(key);
-//        return value;
     }
 }
